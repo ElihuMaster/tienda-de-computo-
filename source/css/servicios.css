@@ -1,0 +1,177 @@
+:root{
+    --primary : #FFCF19;
+    --secondary : #a5a5a5
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* esto es para el compartamiento del padin adentro margin afuera y el border  normalmente*/
+}
+.landing-page-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navegacion:hover a{
+    transform: scale(1); /*da zoom al texto*/
+    opacity: .5;
+    filter: blur(2px); /*da ancho a la opacidad*/
+}
+.navegacion > a:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0px);
+    color: var(--primary);
+    outline: 0;
+}
+.logo > span{
+    font-size: 24px;
+    text-transform: none;
+}
+.logo>span:nth-child(1){
+    color: black;
+    font-weight: 900;
+}
+.logo>span:nth-child(2){
+    color:var(--primary);
+    font-weight: 700;
+    font-style: italic;
+}
+.header-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.navegacion {
+    display: flex;
+    gap: 60px;
+    list-style: none; /* esto le quita las bolitas*/
+}
+
+.navegacion > a{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase; /*mayuscula*/  
+    color: var(--secondary);
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;    
+}
+
+.n-serv{
+    text-align: center;
+    color: var(--primary);
+}
+.format-h2{
+    text-align: center;
+    color: black;
+}
+.text-p{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    padding-top: 20px;
+}
+.text-p > p{    
+    text-align: left;
+    color: var(--secondary);
+}.notice{
+    display: flex;
+    width: 80%;
+    height: 8vh;
+    align-self: center; /*centrar div*/
+    justify-content: center; /*centrar contenido del div*/
+    align-items: center; /*alineo los elementos*/
+    color: black;
+    border-bottom: solid black 1px;
+    background-color: var(--primary);
+    margin-top: 20px;
+}
+.text-notice{
+    display: flex;
+    width: 80%;
+    height: 15vh;
+    align-self: center;
+    padding: 20px;
+    align-items: center;    
+    background-color: var(--secondary);
+    color: black;
+}
+.text-notice > p{
+    text-align: center;
+}
+.image-service{
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    align-self: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap; /*adapta la imagen para no perder el formato dado*/
+    align-content: center; /*acompañado del wrap centra el contenido*/
+
+}
+.image-service > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 22%;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.image-service > div > img{
+    display: flex;
+    width: 90%;
+    height: 25vh; 
+    border: solid 10px var(--secondary);
+}
+.image-service > div > p{
+    text-align: center;
+    color: rgb(14, 102, 184);
+}
+.payment{
+    text-align: center;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.payment-p{
+    width: 80%;
+    align-self: center;
+    border-top: solid 10px var(--primary);
+}
+.payment-p > p{
+    text-align: justify;
+    color: var(--secondary);
+    font-size: 20px;
+}
+.boton{
+    display: flex;
+    width: 10%;
+    margin-top: 50px;
+    align-self: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.boton:hover{
+    transform: scaleX(1.5);
+    background-color: transparent;
+    color: var(--primary);
+    cursor: pointer;
+}

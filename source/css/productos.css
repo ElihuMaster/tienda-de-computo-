@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary : #FFCF19;
+    --secondary : #a5a5a5
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /* esto es para el compartamiento del padin adentro margin afuera y el border  normalmente*/
+    font-family: 'Kanit', sans-serif;
+}
+.landing-page-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo > span{
+    font-size: 24px;
+    text-transform: none;
+   
+}
+.navegacion:hover a{
+    transform: scale(1);
+    opacity: .5;
+    filter: blur(2px);    
+}
+.navegacion > a:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0px);  
+}
+.logo > span:nth-child(1){
+    color: black;
+    font-weight: 900;
+    
+}
+.logo > span:nth-child(2){
+    color:var(--primary);
+    font-weight: 700;
+    font-style: italic;
+}
+.header-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.navegacion {
+    display: flex;
+    gap: 60px;
+    list-style: none; /* esto le quita las bolitas*/
+    transition: 0.55;
+}
+
+.navegacion > a{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase; /*mayuscula*/  
+    background: transparent;
+    color: var(--secondary);
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;    
+}
+.navegacion  > a:hover,
+.navegacion  > a:focus{
+    color: var(--primary);
+    outline: 0;
+    
+}
+/* .imagen-computadora {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    opacity: .5;
+} */
+.grup-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grup-containers > div{
+    
+    display: flex;
+    gap: 20PX;
+    width: 40%;
+    height: 45vh;
+    border:solid 1px var(--primary);
+    flex-direction: row-reverse;
+    margin-left: 20px;
+    
+}
+
+.container-img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--primary);
+    width: 50%;
+    height: 43vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;     
+}
+.container-img > img{
+    display: flex;
+    width: 80%;
+    height: 25vh;
+}
+.search{
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    width: 50%;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.search-buttons{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 15px;
+    height: 10vh;
+    flex-direction: row-reverse;
+    
+}
+.search-buttons button{
+    height: 20px;
+    margin: auto;
+}
+
+.search-buttons button{
+    background: rgba(252, 8, 8, 0.699);
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+   
+}
+.search-buttons button:nth-child(2){
+    background: var(--primary);
+    outline: none;
+    cursor: pointer;
+    
+}
+.search li a{
+    color: cornflowerblue;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.search li:nth-child(2){
+    color: var(--secondary);
+}
+.search li:nth-child(3){
+    color: red;
+}
+.search li:nth-child(4){
+    color: black;
+}
+.search li{
+    list-style: none;
+}
+.boton{
+    display: flex;
+    width: 10%;
+    margin-top: 50px;
+    align-self: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.boton:hover{
+    transform: scaleX(1.5);
+    background-color: transparent;
+    color: var(--primary);
+    cursor: pointer;
+}
+#rating{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+#rating span{
+    display: flex;
+    width: 37%;
+    height: 4vh;
+}
+
+
+
+
+
+/* @media screen (min-width: 320px) and (max-width: 760px) {
+
+} */

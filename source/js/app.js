@@ -1,0 +1,2 @@
+const btnTry = document.getElementById("try").addEventListener("click",() => alert("hola te estoy tratando"))
+const btnpurchase = document.getElementById("purchase").addEventListener("click",() => alert("soy un boton de practica purchase"))
